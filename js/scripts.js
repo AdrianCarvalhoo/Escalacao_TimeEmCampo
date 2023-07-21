@@ -154,10 +154,10 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     const teamSection = document.getElementById("team-section");
-    const selectedPlayers = new Set(); // Utilizamos um conjunto para armazenar os IDs dos jogadores selecionados
+    const selectedPlayers = new Set(); 
     const selectedPlayersSection = document.getElementById("selected-players").querySelector("ul");
-    const selectedPositions = new Set(); // Utilizamos um conjunto para armazenar as posições já selecionadas
-    let totalSelected = 0; // Contador de jogadores selecionados
+    const selectedPositions = new Set(); 
+    let totalSelected = 0; 
 
     teamData.forEach((player) => {
         const playerCard = document.createElement("div");
@@ -200,13 +200,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function updateSelectedPlayersList() {
-        selectedPlayersSection.innerHTML = ""; // Limpar a lista antes de recriá-la
+        selectedPlayersSection.innerHTML = "";
 
         selectedPlayers.forEach((playerId) => {
-            const player = teamData.find((p) => p.name === playerId); // Encontra o jogador correspondente no array teamData
+            const player = teamData.find((p) => p.name === playerId); 
             if (player) {
                 const playerListItem = document.createElement("li");
-                playerListItem.textContent = `${player.name} (${player.position})`; // Posição aparece ao lado do nome
+                playerListItem.textContent = `${player.name} (${player.position})`;
                 selectedPlayersSection.appendChild(playerListItem);
             }
         });
