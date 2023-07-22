@@ -21,27 +21,27 @@ header {
     overflow-x: scroll;
     padding: 20px;
     gap: 10px;
-    white-space: nowrap; /* Impede que os elementos se quebrem em várias linhas */
+    white-space: nowrap; 
 }
 
 .player-card {
     background-color: #f0f0f0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 0 0 300px; /* Definimos uma largura fixa para os elementos */
-    margin-right: 10px; /* Adicionamos margem direita para separar os elementos */
-    display: inline-block; /* Torna os elementos em linha */
-    vertical-align: top; /* Alinha os elementos no topo */
+    flex: 0 0 300px; 
+    margin-right: 10px; 
+    display: inline-block;
+    vertical-align: top; 
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    position: relative; /* Adicionamos posicionamento relativo para usar position absolute no botão */
+    align-items: center; 
+    position: relative; 
 }
 
 .player-card img {
     max-width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -52,7 +52,7 @@ header {
 }
 .player-card button {
   position: absolute;
-  bottom: 10px; /* Distância do botão em relação à parte inferior da .player-card */
+  bottom: 10px; 
   left: 50%;
   transform: translateX(-50%);
   padding: 8px 16px;
