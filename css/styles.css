@@ -8,11 +8,16 @@ body {
     background-repeat: no-repeat;
 }
 header {
-    background-color: #71112d;
-    color: #fff;
+    background-color: rgba(50, 6, 6, 0.6); 
+    color: rgba(240, 240, 240, 0.9);
     padding: 20px;
     text-align: center;
-    opacity: 0.6;
+
+    align-items: center;
+    background-image: url("https://assets-fluminense.s3.amazonaws.com/assets/fluminense-d99518426e66fb3576697742f31b8b1d2b8b53d34f409072c52711764f1bdf32.svg"); /* Substitua pelo caminho da sua imagem */
+    background-repeat: no-repeat;
+    background-position: 40px center; 
+    background-size: auto 80px;
 }
 
 #team-section {
@@ -25,12 +30,12 @@ header {
 }
 
 .player-card {
-    background-color: #f0f0f0;
+    background-color: rgba(240, 240, 240, 0.05); 
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex: 0 0 300px; 
     margin-right: 10px; 
-    display: inline-block;
+    display: inline-block; 
     vertical-align: top; 
     text-align: center;
     display: flex;
@@ -47,6 +52,7 @@ header {
 }
 
 .player-card h3 {
+    color: white;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -72,21 +78,21 @@ header {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background-color: rgba(240, 240, 240, 0.1); 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background-color: rgba(96, 21, 35, 0.7); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background-color: rgba(96, 21, 35, 0.9); 
 }
 
 #selected-players {
     margin-top: 30px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: rgba(1, 99, 61, 0.1);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -95,9 +101,10 @@ header {
     margin-right: auto;
 }
 
-#selected-players h2 {
+#selected-players h1 {
     margin-bottom: 10px;
-    color: #71112D;
+    color: rgba(240, 240, 240, 0.9);
+    background-color: rgba(1, 99, 61, 0.1);
 }
 
 #selected-players ul {
@@ -107,9 +114,49 @@ header {
 }
 
 #selected-players li {
-    background-color: #f0f0f0;
+    background-color: rgba(240, 240, 240, 0.3); 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 
+    rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.player-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0.3);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
     margin: 5px;
+}
+
+.delete-icon {
+    width: 20px; 
+    height: 20px;
+    cursor: pointer;
+
+}
+
+#confirm-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#confirm-button {
+    padding: 12px 24px;
+    background-color: #01633d; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#confirm-button:hover {
+    background-color: #2E8B57; 
 }
